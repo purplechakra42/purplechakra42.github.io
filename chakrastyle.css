@@ -6,10 +6,11 @@ html {
 
 .wrapper {
   width: 69vw;
+  margin: 0 auto; /* vertical margins to 0, autocalculate the horizontal ones*/
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; /*each column takes up an equal FRaction of the space*/
   /*grid-template-rows: 1fr 1fr;*/
-  grid-column-gap: 1vh; /*1% of the vertical height of the viewport*/
+  grid-column-gap: 1vh; /*1% of the height of the viewport*/
   grid-row-gap: 1vw;
 }
 
@@ -17,7 +18,7 @@ html {
   background: #172526;
   color: #ffffff;
   text-align: center;
-	border: none;
+	border: 1px solid transparent; /*need to set it transparent so we can set the colour on hover*/
   border-radius:1vh;
 }
 
