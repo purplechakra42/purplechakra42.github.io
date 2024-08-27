@@ -14,6 +14,11 @@ html {
   grid-row-gap: 1vw;
 }
 
+a {
+  color: #1e6469;
+  text-decoration: none; /* removes the underline from the link */
+}
+
 .calcItem {
   background: #172526;
   color: #ffffff;
