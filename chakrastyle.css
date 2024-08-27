@@ -26,3 +26,8 @@ html {
 	border-color: #3c5659;
 	transition: 0.5s;
 }
+
+.calcItem img {
+  display: block; /* Ensures the image is on its own line */
+  margin: 0 auto; /* Centers the image horizontally */
+}
