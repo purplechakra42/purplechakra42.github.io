@@ -1,0 +1,13 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /*each column takes up an equal FRaction of the space*/
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 1vh; /*1% of the vertical height of the viewport*/
+  grid-row-gap: 1vw;
+}
+
+.calcItem {
+  background: #172526;
+  color: #ffffff;
+	text-align: center;
+}
