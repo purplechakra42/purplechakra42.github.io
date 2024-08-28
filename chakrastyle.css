@@ -1,34 +1,43 @@
+:root {
+	--normal-bg: #172526;
+	--dark-bg: #162021;
+	--text-normal: #ffffff;
+	--link-new: #1e6469;
+	--link-visited: #ffffff;
+	--border: #3c5659;
+}
+
 html {
   height: 100%;
   width: 100%;
-  background: #162021;
+  background: var(--dark-bg);
 }
 
 .wrapper {
-  width: 69vw;
+  width: 50vw;
   margin: 0 auto; /* vertical margins to 0, autocalculate the horizontal ones*/
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /*each column takes up an equal FRaction of the space*/
+  grid-template-columns: 1fr 1fr 1fr; /*each column takes up an equal FRaction of the space*/
   /*grid-template-rows: 1fr 1fr;*/
   grid-column-gap: 1vh; /*1% of the height of the viewport*/
   grid-row-gap: 1vw;
 }
 
 a {
-  color: #1e6469;
+  color: var(--link-new);
   text-decoration: none; /* removes the underline from the link */
 }
 
 .calcItem {
-  background: #172526;
-  color: #ffffff;
+  background: var(--normal-bg);
+  color: var(--text-normal);
   text-align: center;
 	border: 1px solid transparent; /*need to set it transparent so we can set the colour on hover*/
   border-radius:1vh;
 }
 
 .calcItem:hover {
-	border-color: #3c5659;
+	border-color: var(--border);
 	transition: 0.5s;
 }
 
