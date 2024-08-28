@@ -28,20 +28,21 @@ a {
   text-decoration: none; /* removes the underline from the link */
 }
 
-.calcItem {
+.linkBox {
   background: var(--normal-bg);
   color: var(--text-normal);
   text-align: center;
 	border: 1px solid transparent; /*need to set it transparent so we can set the colour on hover*/
   border-radius:1vh;
+	cursor: pointer;
 }
 
-.calcItem:hover {
+.linkBox:hover {
 	border-color: var(--border);
 	transition: 0.5s;
 }
 
-.calcItem img {
+.linkBox img {
   display: block; /* Ensures the image is on its own line */
   margin: 0 auto; /* Centers the image horizontally */
 }
